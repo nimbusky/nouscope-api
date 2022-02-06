@@ -1,0 +1,8 @@
+# Django
+Django==4.0.2
+
+# Django restframework
+djangorestframework==3.13.1
+
+# flake8
+flake8==4.0.1
