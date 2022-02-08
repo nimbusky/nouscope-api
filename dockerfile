@@ -12,6 +12,8 @@ COPY ./requirements.txt /requirements.txt
 
 # pipコマンドを最新にし、txtファイル内のパッケージをインストール
 RUN pip install --upgrade pip && pip install -r /requirements.txt
+
+# postgesに接続するためのドライバをインストール
 RUN apk --no-cache add build-base
 RUN apk --no-cache add postgresql-dev
 RUN python3 -m pip install psycopg2
