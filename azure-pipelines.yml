@@ -10,6 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
+  azureSubscriptionName: 'nimbusky'
   dockerRegistryServiceConnection: '0a23e01d-8246-49ce-a5f8-dfbee6481861'
   imageRepository: 'nimbuskynouscopeapi'
   containerRegistry: 'nouscope.azurecr.io'
@@ -51,5 +52,5 @@ stages:
     - task: AzureWebAppContainer@1
       inputs:
        appName: $(WebAppName)
-       azureSubscription: 'nimbusky'
+       azureSubscription: $(azureSubscriptionName)
        imageName: $(RegistryName)/$(imageRepository):$(build.buildId)
