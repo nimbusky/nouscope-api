@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  azureSubscriptionName: 'nouscope'
+  azureSubscriptionName: 'Resource Manager - nimbusky - nouscope'
   dockerRegistryServiceConnection: '0a23e01d-8246-49ce-a5f8-dfbee6481861'
   imageRepository: 'nimbuskynouscopeapi'
   containerRegistry: 'nouscope.azurecr.io'
