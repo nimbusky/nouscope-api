@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure--kd6&2^@)1e(3v5n&j4sz3(dl)maj$=@@i=n#rma7sd31+2^2j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '*.azurewebsites.net',
+]
 
 
 # Application definition
@@ -132,4 +135,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'core.User'
 
-ALLOWED_HOSTS = ['*.azurewebsites.net']
